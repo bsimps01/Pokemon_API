@@ -20,9 +20,9 @@ struct List: Codable {
 }
 
 struct PokemonImage: Codable {
-    let view: Image
+    let sprites: Image
 }
 
 struct Image: Codable {
-    let dashboard: String
+    let frontDefault: String
 }
