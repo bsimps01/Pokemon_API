@@ -16,13 +16,14 @@ class ImageView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(imageView)
+        view.backgroundColor = .blue
         fetchPokemonImage(url: imageURL!)
         viewImage()
     }
     
     func viewImage(){
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.contentMode = .scaleAspectFit
+        imageView.contentMode = .center
         NSLayoutConstraint.activate([
             imageView.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor),
             imageView.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor),

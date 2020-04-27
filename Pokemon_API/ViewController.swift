@@ -52,6 +52,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             fetchPokemon(url: "\(additionalViews!)")
         }
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        configureImage(url: pokemon[indexPath.row].url)
+    }
     
     
     
